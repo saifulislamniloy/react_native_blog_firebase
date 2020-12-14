@@ -4,7 +4,7 @@
     "slug": "react_native_blog_firebase",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./asset/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
