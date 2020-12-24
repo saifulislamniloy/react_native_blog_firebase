@@ -36,9 +36,15 @@ const PostCard = (props) => {
           type="outline"
           title="  Like (17)"
           icon={<AntDesign name="like2" size={24} color="dodgerblue"
-          onPress={()=>{console.log("like")}} />}
+            onPress={() => { console.log("like") }} />}
         />
-        <Button type="solid" title="Comment (10)" />
+        <Button type="solid" title="Comment"
+          onPress={() => {
+            props.navigation.navigate("Comment", {
+              blogId:props.blogId
+            })
+            // console.log(props.blogId)
+          }} />
       </View>
     </Card>
   );

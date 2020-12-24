@@ -15,18 +15,14 @@ const ProfileScreen = (props) => {
           />
           <Card>
             <View style={{ flexDirection: "row", alignItems: "center" }}>
-              <Avatar
-                containerStyle={{ backgroundColor: "cyan" }}
-                rounded
-                icon={{
-                  name: "thumbs-o-up",
-                  type: "font-awesome",
-                  color: "black",
-                }}
-                activeOpacity={1}
-              />
-              <Text style={{ paddingHorizontal: 10 }}>
-                {auth.CurrentUser.name} Liked Your Post.
+              <Text style={{ alignSelf: "center", fontSize: 25 }}>
+                {auth.CurrentUser.name}
+              </Text>
+              <Text style={{ alignSelf: "center", fontSize: 15 }}>
+                {auth.CurrentUser.email}
+              </Text>
+              <Text style={{ alignSelf: "center", fontSize: 15 }}>
+                {auth.CurrentUser.sid}
               </Text>
             </View>
           </Card>

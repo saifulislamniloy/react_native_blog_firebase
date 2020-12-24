@@ -105,6 +105,8 @@ const HomeScreen = (props) => {
                   author={item.data.author}
                   title={item.id}
                   body={item.data.body}
+                  blogId={item.id}
+                  navigation = {props.navigation}
                 />
               );
             }}
